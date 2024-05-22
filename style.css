@@ -28,3 +28,29 @@ footer{
   background-color: black;
   text-decoration-color: white;
 }
+
+.rating {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .rating label {
+            font-size: 2em;
+            color: #ccc;
+            cursor: pointer;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating input:checked ~ label {
+            color: gold;
+        }
+        .rating input:checked + label ~ label {
+            color: #ccc;
+        }
+        .rating input:hover ~ label {
+            color: gold;
+        }
+        .rating input:hover + label ~ label {
+            color: #ccc;
+        }
